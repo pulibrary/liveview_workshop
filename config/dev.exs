@@ -3,8 +3,9 @@ import Config
 # Configure your database
 config :liveview_workshop, LiveviewWorkshop.Repo,
   username: "postgres",
-  password: "postgres",
+  password: "",
   hostname: "localhost",
+  port: 5434,
   database: "liveview_workshop_dev",
   stacktrace: true,
   show_sensitive_data_on_connection_error: true,

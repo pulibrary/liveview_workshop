@@ -1,18 +1,23 @@
-# LiveviewWorkshop
+# Liveview Workshop
 
-To start your Phoenix server:
+This workshop was given to a group of experienced Ruby developers, so will reference things from that context.
 
-* Run `mix setup` to install and setup dependencies
-* Start Phoenix endpoint with `mix phx.server` or inside IEx with `iex -S mix phx.server`
+## Installation
 
-Now you can visit [`localhost:4000`](http://localhost:4000) from your browser.
+Getting Started:
 
-Ready to run in production? Please [check our deployment guides](https://phoenix.hexdocs.pm/deployment.html).
+1. `devbox shell`
+1. `lando start`
+1. `mix setup`
+1. `iex -S mix phx.server`
+1. `open http://localhost:4000"`
 
-## Learn more
+**IF NO DEVBOX**:
 
-* Official website: https://www.phoenixframework.org/
-* Guides: https://phoenix.hexdocs.pm/overview.html
-* Docs: https://phoenix.hexdocs.pm
-* Forum: https://elixirforum.com/c/phoenix-forum
-* Source: https://github.com/phoenixframework/phoenix
+1. `asdf plugin-add erlang`
+1. `asdf plugin-add elixir`
+1. `asdf install`
+1. `lando start`
+1. `mix setup`
+1. `iex -S mix phx.server`
+1. `open http://localhost:4000"`

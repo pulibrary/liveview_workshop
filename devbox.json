@@ -1,0 +1,20 @@
+{
+  "$schema":  "https://raw.githubusercontent.com/jetify-com/devbox/0.16.0/.schema/devbox.schema.json",
+  "packages": ["beam29Packages.elixir_1_20@latest"],
+  "env": {
+    "MIX_HOME": "$PWD/.nix-mix",
+    "HEX_HOME": "$PWD/.nix-mix",
+    "PATH": "$MIX_HOME/bin:$HEX_HOME/bin:$PATH"
+  },
+  "shell": {
+    // Pulled from "https://github.com/jurraca/elixir-templates/blob/main/phoenix/shell.nix"
+    "init_hook": [
+      "mkdir -p .nix-mix .nix-hex"
+    ],
+    "scripts": {
+      "test": [
+        "mix test"
+      ]
+    }
+  }
+}

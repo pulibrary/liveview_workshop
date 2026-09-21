@@ -35,3 +35,6 @@ liveview_workshop-*.tar
 npm-debug.log
 /assets/node_modules/
 
+# Devbox
+.nix-mix
+.devbox
