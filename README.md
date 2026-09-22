@@ -88,3 +88,17 @@ end
 Now let's try it out at http://localhost:4000/thermostat.
 
 When you click the plus button, the number goes up!
+
+## Lesson Three: Components
+
+This works great, but that button is so unstyled. What can we do?
+
+Well, let's use the button component!
+
+If you look in `lib/liveview_workshop_web/core_components.ex` you'll find a bunch of functions. Everything in Elixir is a function, even reusable UI components.
+
+On line 103 is `def button` - it does a bunch of things, but importantly it comes with some styles (see the "btn-primary" class, which comes from DaisyUI).
+
+Let's use it. Change `<button>` to `<.button>` and `</button>` to `</.button>`.
+
+Look at that button!!
