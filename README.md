@@ -22,7 +22,13 @@ Getting Started:
 1. `iex -S mix phx.server`
 1. `open http://localhost:4000"`
 
+## NAVIGATION
+
+If at any point you want to reset, you can do `git switch lesson_#` and `mix setup` to catch up to the starting point for that lesson.
+
 ## LESSON ONE - Generating a LiveView
+
+**Reset Command**: `git switch main && mix setup`
 
 Phoenix can do normal Controllers, but let's do a LiveView since it's more unique to Phoenix.
 
@@ -54,6 +60,8 @@ Make sure you then run your migrations:
 Now go to `http://localhost:4000/books` and see what you've made!
 
 ## LESSON TWO - LiveView from Scratch
+
+**Reset Command**: `git switch lesson_two && mix setup`
 
 Wow, that was a lot. There's a lot of code in there! Maybe we asked a bunch of questions, maybe we didn't. Either way, we got to look at some Elixir code.
 
@@ -91,6 +99,8 @@ When you click the plus button, the number goes up!
 
 ## Lesson Three: Components
 
+**Reset Command**: `git switch lesson_three && mix setup`
+
 This works great, but that button is so unstyled. What can we do?
 
 Well, let's use the button component!
@@ -102,3 +112,11 @@ On line 103 is `def button` - it does a bunch of things, but importantly it come
 Let's use it. Change `<button>` to `<.button>` and `</button>` to `</.button>`.
 
 Look at that button!!
+
+## Lesson Four: Playin' Around
+
+**Reset Command**: `git switch lesson_four && mix setup`
+
+That's all there is to it! Now's a great time to ask questions or try doing new things.
+
+For instance, can you add a "decrease" button?
