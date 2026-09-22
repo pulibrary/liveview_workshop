@@ -6,6 +6,7 @@ This workshop was given to a group of experienced Ruby developers, so will refer
 
 Getting Started:
 
+1. `git clone https://github.com/pulibrary/liveview_workshop.git`
 1. `devbox shell`
 1. `lando start`
 1. `mix setup`
