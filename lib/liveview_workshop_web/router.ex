@@ -22,6 +22,7 @@ defmodule LiveviewWorkshopWeb.Router do
     live "/books/new", BookLive.Form, :new
     live "/books/:id", BookLive.Show, :show
     live "/books/:id/edit", BookLive.Form, :edit
+    live "/thermostat", ThermostatLive
   end
 
   # Other scopes may use custom stacks.
