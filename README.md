@@ -102,3 +102,9 @@ On line 103 is `def button` - it does a bunch of things, but importantly it come
 Let's use it. Change `<button>` to `<.button>` and `</button>` to `</.button>`.
 
 Look at that button!!
+
+## Lesson Four: Playin' Around
+
+That's all there is to it! Now's a great time to ask questions or try doing new things.
+
+For instance, can you add a "decrease" button?
