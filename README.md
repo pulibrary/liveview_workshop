@@ -52,3 +52,39 @@ Make sure you then run your migrations:
 `mix ecto.migrate`
 
 Now go to `http://localhost:4000/books` and see what you've made!
+
+## LESSON TWO - LiveView from Scratch
+
+Wow, that was a lot. There's a lot of code in there! Maybe we asked a bunch of questions, maybe we didn't. Either way, we got to look at some Elixir code.
+
+Let's build something a little simpler, right from the [Phoenix documentation](https://phoenix.hexdocs.pm/live_view.html#basic-example).
+
+First up let's build a route. Open `lib/liveview_workshop_web/router.ex`, go to where you put the routes before, and add `live "/thermostat", ThermostatLive`
+
+Then add a new file in `lib/liveview_workshop_web/live/thermostat_live.ex` with the following code:
+
+```elixir
+defmodule LiveviewWorkshopWeb.ThermostatLive do
+  use LiveviewWorkshopWeb, :live_view
+
+  def render(assigns) do
+    ~H"""
+    Current temperature: {@temperature}°F
+    <button phx-click="inc_temperature">+</button>
+    """
+  end
+
+  def mount(_params, _session, socket) do
+    temperature = 70 # Let's assume a fixed temperature for now
+    {:ok, assign(socket, :temperature, temperature)}
+  end
+
+  def handle_event("inc_temperature", _params, socket) do
+    {:noreply, update(socket, :temperature, &(&1 + 1))}
+  end
+end
+```
+
+Now let's try it out at http://localhost:4000/thermostat.
+
+When you click the plus button, the number goes up!
